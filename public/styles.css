@@ -23,3 +23,56 @@ header {
 .submit-btn {
   margin-top: 20px;
 }
+
+.feature-card {
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 0 !important;
+}
+
+.feature-card-header {
+  padding: 8px;
+  padding-left: 30px;
+  background-color: #003D4C;
+  color: #888B8D;
+  border-radius: 11px 11px 0 0;
+}
+
+.feature-card-content {
+  background-color: #f9f8f3;
+  border-radius: 0 0 11px 11px;
+  display:flex;
+  justify-content: space-between;
+}
+
+.feature-card-content-left {
+  width: 80%;
+  padding: 8px;
+  padding-left: 30px;
+  color: #003D4C;
+}
+
+.feature-card-content-right {
+  width: 20%;
+  padding: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.tag {
+  padding-top: 5px;
+  margin-left: 5px;
+}
+
+.stag-prod {
+  color: #00AB8E;
+}
+
+.present {
+  color: #00AB8E;
+}
+
+.instance-name {
+  color: #FDB813;
+}
