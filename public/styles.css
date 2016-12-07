@@ -34,6 +34,13 @@ header {
   margin-top: 20px;
 }
 
+.url-table {
+  border: 1px solid black;
+  margin-bottom: 10px;
+  border-radius: 11px;
+  background-color: #f9f8f3;
+}
+
 .feature-card {
   border: 1px solid black;
   border-radius: 12px;
