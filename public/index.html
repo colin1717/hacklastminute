@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" media="screen" title="no title">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tag above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Hackathon 2016.2</title>
+  </head>
+  <body>
+    <header class='z-depth-3'>
+      <div class="container">
+        <img class='logo' src="./pictures/bv.jpg" alt="bv" />
+      </div>
+    </header>
+
+    <div class="row">
+      <div class="col s12 search-bar z-depth-3">
+        <div class="row">
+          <div class="col m2"></div>
+          <div class="input-field col s8 m7">
+            <i class="material-icons prefix">input</i>
+            <select>
+              <option value="" disabled selected>Select Your Client</option>
+              <option value="test1">Colin</option>
+              <option value="test2">Greg</option>
+              <option value="test3">Allie</option>
+              <option value="test1">James</option>
+            </select>
+          </div>
+          <div class="col s2 m3">
+            <a class="waves-effect waves-light btn submit-btn teal accent-4">Submit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="dashboard">
+        <div class="row">
+          <div class="col s4">
+            <div class="card">
+              <div class="card-content">
+                <div class="card-title">Scout File</div>
+              </div>
+            </div>
+          </div>
+          <div class="col s8">
+            <div class="card teal accent-4">
+              <div class="card-content">
+                <div class="card-title white-text">Scout File Is Present!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s4">
+            <div class="card">
+              <div class="card-content">
+                <div class="card-title">BV.configure</div>
+              </div>
+            </div>
+          </div>
+          <div class="col s8">
+            <div class="card red accent-2">
+              <div class="card-content">
+                <div class="card-title white-text">BV.configure is not detected!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script src="./scripts.js" charset="utf-8"></script>
+  </body>
+</html>
