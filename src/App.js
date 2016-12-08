@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Header from './children_components/Header';
 import UrlInputForm from './children_components/UrlInputForm';
 import ClientDropdown from './children_components/ClientDropdown';
 import FeatureCard from './children_components/FeatureCard';
@@ -12,10 +13,10 @@ class App extends Component {
 
     return (
       <div>
+        <Header />
         <ClientDropdown clients={clientList} />
         <UrlInputForm />
-        <DownLow />
-        { featureList.map( (feature) => { return <FeatureCard title={feature} /> } ) }
+        { featureList.map( (feature) => { return <FeatureCard key={feature} title={feature} /> } ) }
       </div>
     );
   }
