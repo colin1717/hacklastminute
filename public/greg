@@ -1,0 +1,21 @@
+{
+codeIntegration: {
+  scoutFile: {
+    status: False,
+    msg: 'Staging Scout File',
+    err: ''
+  },
+  BVRRSummary: {
+    status: True,
+    msg: '',
+    err: ''
+  },
+},
+  productFeed: {
+   validated: {
+   status: True
+   }
+}
+}
+
+}
