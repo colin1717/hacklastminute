@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 class ClientDropdown extends Component {
   render() {
+    let clients = this.props.clients;
     return (
       <div className="row">
         <div className="col s12 search-bar z-depth-3">
@@ -9,12 +10,9 @@ class ClientDropdown extends Component {
             <div className="col m2"></div>
             <div className="input-field col s8 m7">
               <i className="material-icons prefix">input</i>
-              <select>
-                <option value="" disabled selected>Select Your Client</option>
-                <option value="test1">Colin</option>
-                <option value="test2">Greg</option>
-                <option value="test3">Allie</option>
-                <option value="test1">James</option>
+              <select defaultValue='default'>
+                <option value="default" disabled>Select Your Client</option>
+                { clients.map((client) => { return <option key={client} value={client}>{client}</option> }) }
               </select>
             </div>
             <div className="col s2 m3">

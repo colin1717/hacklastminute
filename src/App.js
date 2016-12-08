@@ -7,9 +7,12 @@ import FeatureCard from './children_components/FeatureCard';
 
 class App extends Component {
   render() {
+
+    let clientList = ['Colin', 'Greg', 'Allie', 'James'];
+
     return (
       <div>
-        <ClientDropdown />
+        <ClientDropdown clients={clientList} />
         <UrlInputForm />
         <FeatureCard />
       </div>
