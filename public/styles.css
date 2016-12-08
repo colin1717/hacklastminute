@@ -86,6 +86,11 @@ header {
   flex-direction: column;
 }
 
+.feature-card-content {
+  padding: 15px 50px 50px 50px;
+
+}
+
 .tag {
   padding-top: 5px;
   margin-left: 5px;

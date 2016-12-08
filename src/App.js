@@ -3,6 +3,7 @@ import './App.css';
 import UrlInputForm from './children_components/UrlInputForm';
 import ClientDropdown from './children_components/ClientDropdown';
 import FeatureCard from './children_components/FeatureCard';
+import DownLow from './children_components/DownLow';
 
 class App extends Component {
   render() {
@@ -14,7 +15,8 @@ class App extends Component {
       <div>
         <ClientDropdown clients={clientList} />
         <UrlInputForm />
-        <FeatureCard />
+        <DownLow />
+        { featureList.map( (feature) => { return <FeatureCard title={feature} /> } ) }
       </div>
     );
   }
