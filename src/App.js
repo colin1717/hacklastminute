@@ -28,7 +28,12 @@ class App extends Component {
       </div>
     );
   }
-  _fetchData() {
+  _fetchData(e) {
+    e.preventDefault();
+
+    let client = this.client;
+    console.log(client);
+
     $.ajax({
       method: 'GET',
       url: "http://127.0.0.1:8000/clients/craftsy/get/",
