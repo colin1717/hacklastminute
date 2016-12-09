@@ -19,3 +19,15 @@ codeIntegration: {
 }
 
 }
+
+let title = Object.keys(arr[0]);
+let status = arr[0][title].status;
+let msg = arr[0][title].msg;
+
+
+for (obj in siteData) {
+  let title = Object.keys(arr[obj]);
+  let status = arr[obj][title].status;
+  let msg = arr[obj][title].msg;
+  return {<div>{title}</div>}
+}
