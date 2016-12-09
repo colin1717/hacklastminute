@@ -38,7 +38,7 @@ class App extends Component {
 
     $.ajax({
       method: 'GET',
-      url: `http://127.0.0.1:8000/clients/${client}/get/`,
+      url: `http://127.0.0.1:8000/clients/${client}`,
       success: function(data){
         console.log(data)
       }
