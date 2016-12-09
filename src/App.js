@@ -28,15 +28,12 @@ class App extends Component {
       </div>
     );
   }
-  _fetchData(e) {
-    e.preventDefault();
-
-    let client = this.client;
+  _fetchData(client) {
     console.log(client);
 
     $.ajax({
       method: 'GET',
-      url: "http://127.0.0.1:8000/clients/craftsy/get/",
+      url: `http://127.0.0.1:8000/clients/${client}/get/`,
       success: (siteData) => {this.setState({ siteData }); console.log(siteData)}
     })
   }
