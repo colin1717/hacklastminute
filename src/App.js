@@ -3,9 +3,17 @@ import Header from './children_components/Header';
 import UrlInputForm from './children_components/UrlInputForm';
 import ClientDropdown from './children_components/ClientDropdown';
 import FeatureCard from './children_components/FeatureCard';
-import DownLow from './children_components/DownLow';
+import $ from 'jquery';
 
 class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      siteData: ''
+    }
+  }
+
   render() {
 
     let clientList = ['Colin', 'Greg', 'Allie', 'James'];
@@ -14,11 +22,20 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <ClientDropdown clients={clientList} />
+        <ClientDropdown clients={clientList} fetchData={this._fetchData.bind(this)} />
         <UrlInputForm />
         { featureList.map( (feature) => { return <FeatureCard key={feature} title={feature} /> } ) }
       </div>
     );
+  }
+  _fetchData() {
+    $.ajax({
+      method: 'GET',
+      url: "http://127.0.0.1:8000/clients/craftsy/get/",
+      success: function(data){
+        console.log(data);
+      }
+    })
   }
 }
 

@@ -16,7 +16,7 @@ class ClientDropdown extends Component {
               </select>
             </div>
             <div className="col s2 m3">
-              <a className="waves-effect waves-light btn submit-btn teal accent-4">Submit</a>
+              <a className="waves-effect waves-light btn submit-btn teal accent-4" onClick={this.props.fetchData}>Submit</a>
             </div>
           </div>
         </div>
