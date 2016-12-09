@@ -10,7 +10,7 @@ class FeatureCard extends Component {
               <div className="feature-card-header">{ this.props.title }</div>
               <div className="feature-card-content">
                 <div className="feature-card-content-left">
-                  Info: { this.props.message }
+                  { this.props.message }
                 </div>
                 <div className="feature-card-content-right">
                   <span className='tag present'>Present = {this.props.present.toString()}</span>

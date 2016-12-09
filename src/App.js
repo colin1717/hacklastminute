@@ -10,7 +10,7 @@ class App extends Component {
 
     this.state = {
       showCards: false,
-      siteData: [{"title":"Most Recent Implementation","status":true,"msg":"102eae75-fd67-46c8-aa6f-a51cbc9c83fa"},{"title":"Last Modified","status":true,"msg":"2016-11-29T22:21:56.619+0000"},{"title":"Production Container URL","status":true,"msg":"https://www.craftsy.com/bazaarvoice-container.html"},{"title":"Staging Container URL","status":true,"msg":"https://craftsy.test.sympoz.net/bazaarvoice-container-stg.html"}]
+      siteData: [{"msg": "522aedd4-0b3f-4bc8-8d30-445a48f29e4d", "status": true, "title": "Most Recent Implementation"}, {"msg": "2016-11-21T17:17:28.442+0000", "status": true, "title": "Last Modified"}, {"msg": "http://www.maxtool.com/container.html", "status": true, "title": "Production Container URL"}, {"msg": "http://max-stage.corrastage.com/container.html", "status": true, "title": "Staging Container URL"}, {"status": true, "title": "PIE Enable"}, {"status": true, "title": "Follow Up PIE Enabled"}, {"status": true, "title": "QA Enabled"}]
     }
   }
 
@@ -55,7 +55,7 @@ class App extends Component {
     let featureList = this.state.siteData;
     console.log(featureList);
 
-    return featureList.map((feature) => { return ( <FeatureCard title={ feature.title } present={ feature.status } message={ feature.msg } /> ) })
+    return featureList.map((feature) => { return ( <FeatureCard title={ feature.title } key={feature.title} present={ feature.status } message={ feature.msg } /> ) })
   }
 }
 
